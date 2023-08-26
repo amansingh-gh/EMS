@@ -19,6 +19,11 @@ const Slider = ()=>{
         </div>
         <div>
           <img src={bg2} alt="Slide 2" />
+          <div className="content">
+            <h1 className="slider_heading">Crack, Code, Triumph: Embrace the Challenge at  <span className="highlight2">Solve the Code!</span></h1>
+            <p className="slider_para">"Unleash your coding prowess at 'Solve the Code'! Decode challenges, fuel innovation, and reap rewards. Join fellow programmers for an exhilarating day of problem-solving and seize your moment of glory!"</p>
+            <button className="interesting_btn">Interesting</button>
+          </div>
         </div>
         <div>
           <img src={bg3} alt="Slide 3" />
