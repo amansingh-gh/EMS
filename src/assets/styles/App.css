@@ -144,9 +144,19 @@ body {
   color: var(--orange);
 }
 
-.highlight2{
+.highlight2 {
   color: rgb(7, 216, 181);
 }
+
+.highlight3 {
+  color: rgb(193, 41, 227);
+}
+
+.highlight4 {
+  color: rgb(74, 240, 14);
+}
+
+
 
 .interesting_btn:hover {
   cursor: pointer;
