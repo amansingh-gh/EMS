@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import "./assets/styles/App.css";
+import "./assets/styles/Global.css";
 import About from "./components/About";
 import Events from "./components/Events";
 import Contact from "./components/Contact";

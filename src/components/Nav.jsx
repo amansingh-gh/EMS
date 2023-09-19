@@ -1,5 +1,5 @@
 import React from 'react';
-import './../assets/styles/App.css'
+import './../assets/styles/Global.css'
 import logo from './../assets/images/logo.webp'
 import { FaBars } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';

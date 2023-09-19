@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import "../assets/styles/About.css";
 
 const About = () => {
   return (
