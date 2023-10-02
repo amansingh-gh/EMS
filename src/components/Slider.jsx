@@ -5,8 +5,33 @@ import bg1 from "./../assets/images/bg1.webp";
 import bg2 from "./../assets/images/bg2.webp";
 import bg3 from "./../assets/images/bg3.webp";
 import bg4 from "./../assets/images/bg4.webp";
+import {useTypewriter} from 'react-simple-typewriter'
 
 const Slider = () => {
+  const [roboWar] = useTypewriter({
+    words:[' Robo War!'],
+    loop:{},
+    typeSpeed:30,
+    deleteSpeed:20
+  })
+  const [codeSolve] = useTypewriter({
+    words:[' Solve the Code!'],
+    loop:{},
+    typeSpeed:30,
+    deleteSpeed:20
+  })
+  const [cyberPotential] = useTypewriter({
+    words:[" Cybersecurity's Potential"],
+    loop:{},
+    typeSpeed:30,
+    deleteSpeed:20
+  })
+  const [virtualArena] = useTypewriter({
+    words:[" Virtual Arena"],
+    loop:{},
+    typeSpeed:30,
+    deleteSpeed:20
+  })
   return (
     <Carousel
       autoPlay={true}
@@ -19,7 +44,7 @@ const Slider = () => {
         <div className="content">
           <h1 className="slider_heading">
             Bots Clash, Gears Spin: Glory Awaits in{" "}
-            <span className="highlight"> Robo War!</span>
+            <span className="highlight">{roboWar}</span>
           </h1>
           <p className="slider_para">
             Prepare for mechanized combat like never before! Join us at Robo War
@@ -34,7 +59,7 @@ const Slider = () => {
         <div className="content">
           <h1 className="slider_heading">
             Crack, Code, Triumph: Embrace the Challenge at{" "}
-            <span className="highlight2">Solve the Code!</span>
+            <span className="highlight2">{codeSolve}</span>
           </h1>
           <p className="slider_para">
             Unleash your coding prowess at 'Solve the Code'! Decode challenges,
@@ -49,7 +74,7 @@ const Slider = () => {
         <div className="content">
           <h1 className="slider_heading">
             Empowering Your Digital Defense: Unveiling
-            <span className="highlight3"> Cybersecurity's Potential</span>
+            <span className="highlight3">{cyberPotential}</span>
           </h1>
           <p className="slider_para">
             Step into the realm of cybersecurity excellence. Our event is a
@@ -65,7 +90,7 @@ const Slider = () => {
         <div className="content">
           <h1 className="slider_heading">
             Level Up Reality: Where Esports Transcend the{" "}
-            <span className="highlight4">Virtual Arena</span>
+            <span className="highlight4">{virtualArena}</span>
           </h1>
           <p className="slider_para">
             Dive into the exhilarating world of esports at our event. Witness
