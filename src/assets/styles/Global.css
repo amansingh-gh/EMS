@@ -447,7 +447,7 @@ body {
 .social-icons{
   color: white;
   font-size: 18px;
-  /* gap: 2rem; */
+  cursor: pointer;
 }
 
 #ft-section .ft-headline {
@@ -538,11 +538,6 @@ body {
   text-align: center;
   color: var(--white);
 }
-
-.social-icons {
-  cursor: pointer;
-}
-
 
 /* ###########  ABOUT PAGE  ########## */
 
