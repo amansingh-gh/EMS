@@ -167,6 +167,8 @@ body {
 }
 
 .interesting_btn {
+  font-family: 'Young Serif', serif;
+  font-weight: 700;
   border: 2px solid var(--orange);
   outline: none;
   width: 150px;
@@ -174,9 +176,10 @@ body {
   font-size: 1.3rem;
   clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 100% 100%, 5% 100%, 0 80%, 0 0%);
   -color: var(--red);
-  color: white;
+  /* color: white; */
   box-shadow: 5px 5px 20px -15px black;
   transition: .4s;
+  /* background-color: red; */
 }
 
 /* ---------------slider -------------- */
@@ -341,7 +344,6 @@ body {
 #whoWeAre .who-left {
   flex: 2;
   padding-left: 2.5rem;
-  /* color: blueviolet; */
 }
 
 #whoWeAre .who-left p {
@@ -361,6 +363,7 @@ body {
   border-radius: 2rem;
   background: url(../images/whoBoyRight.png);
 }
+
 
 /* ================ Upcoming Events ============== */
 
@@ -438,109 +441,7 @@ body {
 }
 
 
-
-/* ###########  Footer  ############ */
-#ft-section {
-  background-color: black;
-  height: 48vh;
-}
-.social-icons{
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-#ft-section .ft-headline {
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  /* margin-top: 2rem; */
-  padding-top: 2rem;
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-#ft-section .email-cont {
-  border: none;
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  height: 40px;
-  border-radius: 10rem;
-  margin-bottom: 1rem;
-  /* margin-top: 1rem; */
-}
-
-#ft-section .btn-sec {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
-
-.email-cont ::placeholder {
-  text-align: center;
-  color: black;
-}
-
-#ft-section #all {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-#ft-section #all .company-details .company-name {
-  color: var(--white);
-}
-
-.nav-icons ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-icons {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3vw;
-}
-
-.nav-icons li a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-
-#all .nav_icons li a:hover {
-  transition: all 0.5s ease;
-  color: red;
-}
-
-#ft-section .btn {
-  font-size: 1rem;
-  border-radius: 4px;
-  width: 120px;
-  height: 30px;
-  border: none;
-  background-color: rgb(142, 15, 15);
-  color: var(--white);
-}
-
-#ft-section .btn:hover {
-  cursor: pointer;
-  color: var(--white);
-  background-color: rgb(167, 7, 7);
-  transition: 0.2s ease-in;
-}
-
-
-.copyright-content {
-  margin-top: 1.1rem;
-  text-align: center;
-  color: var(--white);
-}
-
 /* ###########  ABOUT PAGE  ########## */
-
 
 .section-crop {
   width: 70%;
@@ -548,7 +449,6 @@ body {
   margin: 0 auto;
   background-color: #f0f0f0;
 }
-
 
 
 
@@ -580,7 +480,6 @@ body {
   justify-content: center;
   height: 70vh;
   width: 55vw;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -607,7 +506,7 @@ body {
 
 input[type="text" ]{
   height: 2rem;
-  width: 20rem;
+  width: 35rem;
   color: black;
   border: none;
   padding: 1rem;
@@ -626,26 +525,132 @@ textarea[type="text"]{
 
 
 
+/* #######  Footer ###### */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* .mapFrame{
-  border-radius: 50px;
- z-index: 1;
+#footer-section{
+  height: 50vh;
+  background-color: black;
+  display: flex;
+  gap: 1%;
 }
-.inputFields{
-height: 250px;
-width: 1000px;
-background-color: #351A2C;
-z-index: 99;
-} */
+
+#footer-section .company-details{
+  width: 20%;
+  height: inherit;
+  gap: 3rem;
+}
+
+
+#footer-section .newsLetter{
+  width: 60%;
+  height: inherit;
+  padding-left: 2rem;
+}
+
+#footer-section .social-handle{
+  width: 20%;
+  height: inherit;
+}
+.social-icons li a{
+  color: var(--white);
+}
+
+.social-icons{
+  padding-top: 1rem;
+}
+.social-icons li {
+  list-style: none;
+  font-size: 25px;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-section .company-details{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer-section .company-details .nav_logo{
+  width: 8rem;
+}
+
+#footer-section .company-details .company-name{
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--white);
+
+}
+
+#footer-section .newsLetter .ft-headline{
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+#footer-section .newsLetter .email-cont {
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  height: 40px;
+  border-radius: 10rem;
+  margin-bottom: 2rem;
+
+}
+
+#footer-section .newsLetter .btn-sec {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+#footer-section  .email-cont ::placeholder {
+  text-align: center;
+  color: black;
+}
+
+#footer-section .newsLetter .btn {
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+  background-color: rgb(142, 15, 15);
+  color: var(--white);
+}
+
+#footer-section .newsLetter .btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: rgb(167, 7, 7);
+  transition: 0.2s ease-in;
+}
+
+#footer-section .copyright-content {
+  margin-top: 1.1rem;
+  text-align: center;
+  color: var(--white);
+  padding-top: 5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#footer-section .newsLetter .email-cont input[type="text" ]{
+  height: 2rem;
+  width: 30rem;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 7px;
+  outline: none;
+  text-align: center;
+}
