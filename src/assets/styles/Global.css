@@ -638,7 +638,7 @@ textarea[type="text"]{
   margin-top: 1.1rem;
   text-align: center;
   color: var(--white);
-  padding-top: 5rem;
+  padding-top: 2rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -653,4 +653,22 @@ textarea[type="text"]{
   border-radius: 7px;
   outline: none;
   text-align: center;
+}
+
+#footer-section .newsLetter .nav_links{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+#footer-section .newsLetter .nav_links li a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+#footer-section .newsLetter .nav_links li a:hover {
+  transition: all 0.5s ease;
+  color: red;
 }

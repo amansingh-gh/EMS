@@ -14,7 +14,6 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

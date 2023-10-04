@@ -24,6 +24,12 @@ const Footer = () => {
         <div className="btn-sec">
           <button className="btn">Subscribe</button>
         </div>
+        <div className='nav_links'>
+            <li><NavLink to="/">Home</NavLink> </li>
+            <li><NavLink to="/about">About</NavLink> </li>
+            <li><NavLink to="/events">Events</NavLink> </li>
+            <li><NavLink to="/contact">Contact</NavLink> </li>
+      </div>
         <div className="copyright-content">
           <p>Copyright © 2023 developed and maintained by #PegasusTeam</p>
         </div>
@@ -37,6 +43,7 @@ const Footer = () => {
             <li><NavLink to="https://youtube.com" target="_blank" ><AiFillYoutube/></NavLink> </li>
             <li><NavLink to="https://twitter.com" target="_blank" ><FaTwitter/></NavLink> </li>
           </div>
+          
         </div>
       </div>
     </>
