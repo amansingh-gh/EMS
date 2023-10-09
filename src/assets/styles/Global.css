@@ -8,6 +8,11 @@ font-family: 'Poppins', sans-serif; */
   width: 0px;
 }
 
+::selection {
+  color: var(--white);
+  background: rgb(131, 0, 100);
+}
+
 /* variables */
 :root {
   --white: rgb(218, 224, 243);
@@ -362,6 +367,7 @@ body {
   margin-right: 2rem;
   border-radius: 2rem;
   background: url(../images/whoBoyRight.png);
+  color: white;
 }
 
 
@@ -474,18 +480,38 @@ body {
   width: 38%;
 }
 
-#contact-sec .inputFields .contact-inputs{
+.contact-section {
+  height: 70vh;
+  /* background-color: red; */
+}
+
+.inputFields {
+  /* background-color: blue; */
   display: flex;
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+  /* height: auto; */
+}
+
+.contact-form h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+}
+
+#contact-sec .inputFields .contact-inputs {
+  display: flex;
+  align-items: center;
   justify-content: center;
   height: 70vh;
   width: 55vw;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  
+
 }
-#contact-sec .btn{
+
+#contact-sec .btn {
   font-size: 1rem;
   border-radius: 4px;
   width: 120px;
@@ -504,8 +530,8 @@ body {
   transform: scale(0.9);
 }
 
-input[type="text" ]{
-  height: 2rem;
+input[type="text"] {
+  height: 2.5rem;
   width: 35rem;
   color: black;
   border: none;
@@ -514,8 +540,9 @@ input[type="text" ]{
   outline: none;
 }
 
-textarea[type="text"]{
-  width: 40rem;
+textarea[type="text"] {
+  width: 30rem;
+  height: 8rem;
   outline: none;
   border-radius: 7px;
   padding: 1rem;
@@ -527,37 +554,39 @@ textarea[type="text"]{
 
 /* #######  Footer ###### */
 
-#footer-section{
+#footer-section {
   height: 50vh;
   background-color: black;
   display: flex;
   gap: 1%;
 }
 
-#footer-section .company-details{
+#footer-section .company-details {
   width: 20%;
   height: inherit;
   gap: 3rem;
 }
 
 
-#footer-section .newsLetter{
+#footer-section .newsLetter {
   width: 60%;
   height: inherit;
   padding-left: 2rem;
 }
 
-#footer-section .social-handle{
+#footer-section .social-handle {
   width: 20%;
   height: inherit;
 }
-.social-icons li a{
+
+.social-icons li a {
   color: var(--white);
 }
 
-.social-icons{
+.social-icons {
   padding-top: 1rem;
 }
+
 .social-icons li {
   list-style: none;
   font-size: 25px;
@@ -567,7 +596,7 @@ textarea[type="text"]{
   align-items: center;
 }
 
-#footer-section .company-details{
+#footer-section .company-details {
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -575,18 +604,18 @@ textarea[type="text"]{
   flex-direction: column;
 }
 
-#footer-section .company-details .nav_logo{
+#footer-section .company-details .nav_logo {
   width: 8rem;
 }
 
-#footer-section .company-details .company-name{
+#footer-section .company-details .company-name {
   font-size: 1.2rem;
   font-weight: 800;
   color: var(--white);
 
 }
 
-#footer-section .newsLetter .ft-headline{
+#footer-section .newsLetter .ft-headline {
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -612,7 +641,8 @@ textarea[type="text"]{
   justify-content: center;
   padding-top: 1rem;
 }
-#footer-section  .email-cont ::placeholder {
+
+#footer-section .email-cont ::placeholder {
   text-align: center;
   color: black;
 }
@@ -643,7 +673,7 @@ textarea[type="text"]{
   font-weight: 700;
 }
 
-#footer-section .newsLetter .email-cont input[type="text" ]{
+#footer-section .newsLetter .email-cont input[type="text"] {
   height: 2rem;
   width: 30rem;
   color: black;
@@ -655,7 +685,7 @@ textarea[type="text"]{
   text-align: center;
 }
 
-#footer-section .newsLetter .nav_links{
+#footer-section .newsLetter .nav_links {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -663,9 +693,14 @@ textarea[type="text"]{
   margin-top: 2rem;
   font-weight: 500;
 }
-#footer-section .newsLetter .nav_links li a{
+
+#footer-section .newsLetter .nav_links li a {
   text-decoration: none;
   color: var(--white);
+}
+
+#footer-section .newsLetter .nav_links a:active {
+  color: black;
 }
 
 #footer-section .newsLetter .nav_links li a:hover {

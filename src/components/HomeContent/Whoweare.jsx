@@ -1,11 +1,12 @@
 import React from "react";
+// import
 
 const whoweare = () => {
   return (
     <>
       <div id="whoWeAre">
         <div className="who-left">
-          <div className="heading-line">Who We Are ?</div>
+          <div className="heading-line">Who We Are ? </div>
           <div className="left-content">
             Welcome to our tech haven! We are a passionate collective of tech
             enthusiasts dedicated to creating a vibrant online space for

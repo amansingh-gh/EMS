@@ -15,19 +15,19 @@ const Header = () => {
 
   return (
     <>
-    <header id="hero-section">
-      <Nav toggleActive={toggleActive} />
-      <div
-        className={`header_sides left_side ${isActive ? "" : "active"}`}
-      ></div>
-      <div
-        className={`right_side header_sides ${isActive ? "" : "active"}`}
-      ></div>
-      <Slider />
-    </header>
-    <Whoweare/>
-    <Upcoming/>
-    <Footer/>
+      <header id="hero-section">
+        <Nav toggleActive={toggleActive} />
+        <div
+          className={`header_sides left_side ${isActive ? "" : "active"}`}
+        ></div>
+        <div
+          className={`right_side header_sides ${isActive ? "" : "active"}`}
+        ></div>
+        <Slider />
+      </header>
+      <Whoweare />
+      <Upcoming />
+      <Footer />
     </>
   );
 };

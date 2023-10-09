@@ -19,38 +19,42 @@ const Contact = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="inputFields">
-          <div className="contact-form">
-            <form action="#" method="POST" className="contact-inputs">
-              <input
-                type="text"
-                name="username"
-                placeholder="Name"
-                autoComplete="off"
-                required
-              />
-              <input
-                type="text"
-                name="Email"
-                placeholder="Email"
-                autoComplete="off"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                placeholder="Your Message here"
-                cols="20"
-                rows="6"
-                autoComplete="off"
-                required
-              ></textarea>
-              <div className="btn-section">
-                <button type="button" className="btn">
-                  Connect
-                </button>
-              </div>
-            </form>
+
+        <div className="contact-section">
+          <div className="inputFields">
+            <div className="contact-form">
+              <h1>Contact Us</h1>
+              <form action="#" method="POST" className="contact-inputs">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Your Name"
+                  autoComplete="off"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Your Email"
+                  autoComplete="off"
+                  required
+                />
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder="Your Message here"
+                  cols="20"
+                  rows="6"
+                  autoComplete="off"
+                  required
+                ></textarea>
+                <div className="btn-section">
+                  <button type="button" className="btn">
+                    Connect
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
